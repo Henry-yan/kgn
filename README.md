@@ -1,5 +1,10 @@
 # kgn
 ---
+## Introduction
+KGN is a Nearest Neighbor Search algorithm, based on NSG
+
+---
+
 ## Installation
 ### Step 1: Configure environment dependencies
 ```bash
