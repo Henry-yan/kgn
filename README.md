@@ -1,7 +1,9 @@
 # kgn
 ---
 ## Introduction
-KGN is a Nearest Neighbor Search algorithm, based on NSG
+KGN is a Nearest Neighbor Search algorithm, based on NSG  
+
+The project is currently closed-source, and we will consider open sourcing it after the associated research paper has been accepted.
 
 ---
 
