@@ -52,8 +52,8 @@ The test results from running [ann-benchmarks](https://github.com/erikbern/ann-b
 
 ---
 
-### nytimes-256-angular
+### glove-25- angular
 
-![image](results/nytimes-256-angular.png)
+![image](results/glove-25-angular.png)
 
 ---
