@@ -1,4 +1,4 @@
-# KGN向量数据库
+# KGN向量检索
 
 # 安装
 
@@ -54,9 +54,6 @@
 
 ![image](results/gist-960-euclidean.png)
 
-## glove-100-angular
-
-![image](results/glove-100-angular.png)
 
 ## glove-25-angular
 
