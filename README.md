@@ -58,11 +58,11 @@
 
 ![image](results/glove-100-angular.png)
 
-### glove-25-angular
+## glove-25-angular
 
 ![image](results/glove-25-angular.png)
 
-### nytimes-256-angular
+## nytimes-256-angular
 
 ![image](results/nytimes-256-angular.png)
 
