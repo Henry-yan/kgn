@@ -41,7 +41,31 @@
 | nytimes-256-angular  |  2 | 128  |
 |  glove-100-angular | 2  |  128 |
 
+# 测试结果
+## sift-128-euclidean
 
+![image](results/sift-128-euclidean.png)
 
+## fashion-mnist-784-euclidean
+
+![image](results/fashion-mnist-784-euclidean.png)
+
+## gist-960-euclidean
+
+![image](results/gist-960-euclidean.png)
+
+## glove-100-angular
+
+![image](results/glove-100-angular.png)
+
+### glove-25-angular
+
+![image](results/glove-25-angular.png)
+
+### nytimes-256-angular
+
+![image](results/nytimes-256-angular.png)
+
+---
 
 
