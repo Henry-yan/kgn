@@ -17,29 +17,27 @@
     import pykgn
 
 ## 构建索引并保存
-    Index = kgn.Index(nb=n, dim=d, base=X, topK=topk,metric=metric,level=level, R=R)
+    Index = kgn.Index(nb=n, dim=d, base=X, topK=topk, metric=metric, level=level, R=R, R2=R2)
     Index.build(path)
 ## 读取索引
-    Index = kgn.Index(nb=n, dim=d, base=X, topK=topk, metric=metric, level=level, R=R)
+    Index = kgn.Index(nb=n, dim=d, base=X, topK=topk, metric=metric, level=level, R=R, R2=R2)
     Index.load(path)
 ## 搜索
     if metric == 'IP':
         q = q / np.linalg.norm(q)
-    res = Index.search(ef, q)
+    res = Index.search(reorder, prune, ef, q)
 
 # 参数
-示例中向量数据库索引的代码为
-    Index = kgn.Index(nb=n, dim=d, base=X, topK=topk, metric=metric, level=level, R=R)
-其中主要有level和R两个参数，建议取值如下：
+    Index = kgn.Index(nb=n, dim=d, base=X, topK=topk, metric=metric, level=level, R=R, R2=R2)
+其中主要有level、R、R2三个参数，建议取值如下：
+主要的构建时参数及其建议的候选值如下：
+* `level`: 建议取值为 `[1, 2]`。
+* `R`: 建议取值为 `[128, 160]`。
+* `R2`: 建议取值为 `[128, 160]`。
 
-| 数据集  |  level | R  |
-| ------- | ------------ | ------------ |
-|  sift-128-euclidean | 2  | 160  |
-| gist-960-euclidean  | 2  | 160  |
-| fashion-mnist-784-euclidean  |  2 |  160 |
-| glove-25-angular  | 1  |  160 |
-| nytimes-256-angular  |  2 | 128  |
-|  glove-100-angular | 2  |  128 |
+查询时的主要参数包括：
+* `reorder`: 建议取值为 `[1.0, 1.5]`。
+* `prune`: 建议取值为 `[1, 15]`。
 
 # 测试结果
 ## sift-128-euclidean
